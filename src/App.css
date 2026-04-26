@@ -1,0 +1,33 @@
+/* App.css — global base styles */
+/* Customize colors, fonts, and background to match your Viking theme */
+
+:root {
+  --color-bg: #0e0c09;
+  --color-text: #e8dcc8;
+  --color-accent: #a0522d;
+  --font-body: Georgia, "Times New Roman", serif;
+  --font-display: Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+button {
+  font-family: inherit;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
