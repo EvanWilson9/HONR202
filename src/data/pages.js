@@ -26,9 +26,8 @@ import MonsterNorth from "../pages/storyThree/MonsterNorth";
 import HumanNorth from "../pages/storyThree/HumanNorth";
 import Unnatural from "../pages/storyThree/Unnatural";
 import Strength from "../pages/storyThree/Strength";
-import Trade from "../pages/storyThree/Trade";
-import Conflict from "../pages/storyThree/Conflict";
 import EndingThree from "../pages/endings/StoryThree/EndingThree";
+import Differences from "../pages/storyThree/Differences";
 
 export const pages = {
 
@@ -183,21 +182,12 @@ export const pages = {
                         title: "A Life Like Any Other",
                         component: HumanNorth,
                         choices: [
-                          { label: "Trade and wealth", target: "trade" },
-                          { label: "Conflict and survival", target: "conflict" },
+                          { label: "Differences aren't bad", target: "normal" },
                         ],
                       },
-                            /**/trade: {
-                                  title: "Trade and Wealth",
-                                  component: Trade,
-                                  choices: [
-                                    { label: "Continue", target: "endingThree" },
-                                  ],
-                                },
-
-                                conflict: {
-                                  title: "Conflict and Survival",
-                                  component: Conflict,
+                            /**/normal: {
+                                  title: "Differences Are Natural",
+                                  component: Differences,
                                   choices: [
                                     { label: "Continue", target: "endingThree" },
                                   ],
